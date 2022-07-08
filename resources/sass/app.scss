@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@300;400;500&display=swap');
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+h4 {
+    font-size: 2.25rem; /* 36px */
+    line-height: 2.5rem; /* 40px */
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 1rem; /* 16px */
+}
+
+.h-42px {
+    height: 42px;
+}
+
+.alert {
+    background: #bfdbfe; // blue 200
+    border: 2px solid #3b82f6; // blue 500
+	border-radius: 0.125rem; /* 2px */
+    padding: 1rem 1.5rem;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+.alert-warning {
+    background: #fecdd3; //rose 200
+    border: 2px solid #f43f5e; // rose 500
+}
+
+/**
+* Table
+*/
+
+table {
+    min-width: 100%;
+    thead {
+        background: #fafafa;
+        border-bottom: #e4e4e7 solid 1px;
+        tr {
+            th {
+                text-align: left;
+                padding: 0.75rem 1.5rem;
+                font-weight: 500;
+                color: #18181b;
+            }
+        }
+    }
+    tbody {
+        tr {
+            &:nth-child(odd) {
+                background: white;
+            }
+            &:nth-child(even) {
+                background: #f4f4f5;
+            }
+            td {
+                padding: 1rem 1.5rem;
+                color: #52525b;
+            }
+        }
+    }
+}
